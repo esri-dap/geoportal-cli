@@ -14,11 +14,11 @@ function getVersion() {
   var cwd = process.cwd();
 
   var output = 'geoportal-cli: v' + module.exports.version + '\n';
-  var aposPath = cwd + '/node_modules/geoportal/';
+  var geopPath = cwd + '/node_modules/geoportal/';
 
   // Append message for geoportal.
-  if (fs.existsSync(aposPath)) {
-    var package = require(aposPath + 'package.json');
+  if (fs.existsSync(geopPath)) {
+    var package = require(geopPath + 'package.json');
 
     output += 'geoportal v' + package.version + ' is installed in this project.';
   } else {
@@ -31,9 +31,9 @@ function getVersion() {
       output += 'geoportal ' + packageJSON.dependencies.geoportal + ' will be installed with a new project, according to the dependencies of geoportal-boilerplate.';
     } else {
       var execSync = require('child_process').execSync;
-      var aposVersion = execSync('npm view geoportal version').toString();
+      var geopVersion = execSync('npm view geoportal version').toString();
 
-      output += 'geoportal v' + aposVersion.trim() + ' (latest) will be installed with a new project, unless the boilerplate project\'s dependencies specify otherwise.';
+      output += 'geoportal v' + geopVersion.trim() + ' (latest) will be installed with a new project, unless the boilerplate project\'s dependencies specify otherwise.';
     }
   }
 
@@ -46,10 +46,10 @@ var createCmd   = require('../lib/commands/create')(program);
 var createWidgetCmd = require('../lib/commands/create-widget')(program);
 var createPieceCmd = require('../lib/commands/create-piece')(program);
 var createModuleCmd = require('../lib/commands/create-module')(program);
-var aposCmd     = require('../lib/geoportal')(program);
+var geopCmd     = require('../lib/geoportal')(program);
 
 program.on('--help', function() {
-  aposCmd.help();
+  geopCmd.help();
 });
 
 program.parse(process.argv);

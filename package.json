@@ -24,6 +24,6 @@
   "preferGlobal": true,
   "bin": {
     "geoportal": "bin/geoportal",
-    "apos": "bin/geoportal"
+    "geop": "bin/geoportal"
   }
 }
