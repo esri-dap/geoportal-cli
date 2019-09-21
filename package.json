@@ -1,7 +1,7 @@
 {
-  "name": "apostrophe-cli",
+  "name": "geoportal-cli",
   "version": "2.3.2",
-  "description": "Commandline generator and configurator for Apostrophe CMS",
+  "description": "Commandline generator and configurator for Esri ID Geoportal CMS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

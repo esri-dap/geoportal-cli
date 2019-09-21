@@ -22,7 +22,7 @@ Recognize `apostrophe-open-museum` as a default value for `shortName` so it can 
 
 ** 2.1.4
 
-* Uses `npm update` rather than `npm install` so that we're not married to an ancient patchlevel of Apostrophe from the start when birthing a new project.
+* Uses `npm update` rather than `npm install` so that we're not married to an ancient patchlevel of Geoportal from the start when birthing a new project.
 
 ** 2.1.3
 
