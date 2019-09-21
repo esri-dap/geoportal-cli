@@ -3,4 +3,4 @@ var config = {};
 module.exports = config;
 
 config.SHELL_DEPENDS = ['git'];
-config.APOSTROPHE_BOILERPLATE = 'https://github.com/punkave/apostrophe-boilerplate.git';
+config.GEOPORTAL_BOILERPLATE = 'https://github.com/esri-dap/geoportal-boilerplate.git';

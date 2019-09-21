@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/punkave/apostrophe-cli.git"
+    "url": "https://github.com/punkave/geoportal-cli.git"
   },
   "dependencies": {
     "colors": "~1.0.x",
@@ -23,7 +23,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "apostrophe": "bin/apostrophe",
-    "apos": "bin/apostrophe"
+    "geoportal": "bin/geoportal",
+    "apos": "bin/geoportal"
   }
 }
